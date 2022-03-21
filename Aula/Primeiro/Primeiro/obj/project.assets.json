@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Cursos\\CursoCSHarp\\Aula\\Primeiro\\Primeiro\\Primeiro.csproj",
-      "projectName": "Primeiro",
-      "projectPath": "G:\\Cursos\\CursoCSHarp\\Aula\\Primeiro\\Primeiro\\Primeiro.csproj",
+      "projectUniqueName": "G:\\Cursos\\CursoCSHarp\\Aula\\Primeiro\\Primeiro\\PrimeiroProjeto.csproj",
+      "projectName": "PrimeiroProjeto",
+      "projectPath": "G:\\Cursos\\CursoCSHarp\\Aula\\Primeiro\\Primeiro\\PrimeiroProjeto.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
       "outputPath": "G:\\Cursos\\CursoCSHarp\\Aula\\Primeiro\\Primeiro\\obj\\",
       "projectStyle": "PackageReference",
