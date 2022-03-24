@@ -1,0 +1,13 @@
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\bin\Debug\netcoreapp3.1\Exercicio6.exe
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\bin\Debug\netcoreapp3.1\Exercicio6.deps.json
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\bin\Debug\netcoreapp3.1\Exercicio6.runtimeconfig.json
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\bin\Debug\netcoreapp3.1\Exercicio6.runtimeconfig.dev.json
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\bin\Debug\netcoreapp3.1\Exercicio6.dll
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\bin\Debug\netcoreapp3.1\Exercicio6.pdb
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\obj\Debug\netcoreapp3.1\Exercicio6.GeneratedMSBuildEditorConfig.editorconfig
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\obj\Debug\netcoreapp3.1\Exercicio6.AssemblyInfoInputs.cache
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\obj\Debug\netcoreapp3.1\Exercicio6.AssemblyInfo.cs
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\obj\Debug\netcoreapp3.1\Exercicio6.csproj.CoreCompileInputs.cache
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\obj\Debug\netcoreapp3.1\Exercicio6.dll
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\obj\Debug\netcoreapp3.1\Exercicio6.pdb
+G:\Cursos\CursoCSHarp\Exercicios\Exercicio6\Exercicio6\obj\Debug\netcoreapp3.1\Exercicio6.genruntimeconfig.cache
