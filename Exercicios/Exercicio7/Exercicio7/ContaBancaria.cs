@@ -7,21 +7,20 @@ namespace Exercicio7
 {
     internal class ContaBancaria
     {
-        public int NumeroConta { get; private set; }
-        public string TitularConta { get; set; }
-        public double Saldo { get; private set; }
-
         public ContaBancaria(int numeroConta, string titularConta)
         {
             NumeroConta = numeroConta;
             TitularConta = titularConta;
-            Saldo = 0;
         }
 
         public ContaBancaria(int numeroConta, string titularConta, double saldo) : this(numeroConta, titularConta)
         {
             Saldo = saldo;
         }
+
+        public int NumeroConta { get; private set; }
+        public double Saldo { get; private set; }
+        public string TitularConta { get; set; }
 
         public void Deposito(double valor)
         {

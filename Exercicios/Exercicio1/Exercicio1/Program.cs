@@ -8,32 +8,39 @@ namespace Exercicio1
         private static void Main(string[] args)
         {
             Console.WriteLine($"Exercício 1:");
-            Console.WriteLine(Exercicio1());
-            Console.WriteLine(Exercicio1());
-            Console.WriteLine(Exercicio1());
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine(Exercicio1());
+            }
 
             Console.WriteLine($"\nExercício 2:");
-            Console.WriteLine(Exercicio2());
-            Console.WriteLine(Exercicio2());
-            Console.WriteLine(Exercicio2());
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine(Exercicio2());
+            }
 
             Console.WriteLine($"\nExercício 3:");
-            Console.WriteLine(Exercicio3());
-            Console.WriteLine(Exercicio3());
-
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine(Exercicio3());
+            }
             Console.WriteLine($"\nExercício 4:");
-            Console.WriteLine(Exercicio4());
-            Console.WriteLine(Exercicio4());
-            Console.WriteLine(Exercicio4());
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine(Exercicio4());
+            }
 
             Console.WriteLine($"\nExercício 5:");
-            Console.WriteLine(Exercicio5());
-            Console.WriteLine(Exercicio5());
-            Console.WriteLine(Exercicio5());
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine(Exercicio5());
+            }
 
             Console.WriteLine($"\nExercício 6:");
-            Console.WriteLine(Exercicio6());
-            Console.WriteLine(Exercicio6());
+            for (int i = 0; i < 2; i++)
+            {
+                Console.WriteLine(Exercicio6());
+            }
         }
 
         private static String Exercicio1()

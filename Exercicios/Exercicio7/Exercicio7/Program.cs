@@ -7,23 +7,18 @@ namespace Exercicio7
     {
         private static void Main(string[] args)
         {
+            ContaBancaria contaBancaria;
+
             Console.Write("Entre o número da conta: ");
             int numeroConta = int.Parse(Console.ReadLine());
+
             Console.Write("Entre o titular da conta: ");
             string titularConta = Console.ReadLine();
+
             Console.Write("Haverá depósito inicial: ");
-            string depo = Console.ReadLine();
-            bool deposito;
-            ContaBancaria contaBancaria;
-            if (depo == "s")
-            {
-                deposito = true;
-            }
-            else
-            {
-                deposito = false;
-            }
-            if (deposito)
+            char depo = char.Parse(Console.ReadLine());
+
+            if (depo == 's' || depo == 'S')
             {
                 Console.Write("Entre o valor de depósito incial: ");
                 double valorDeposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -48,6 +43,8 @@ namespace Exercicio7
             Console.Write("Entre um valor para saque:");
             contaBancaria.Saque(double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture));
             Console.WriteLine(contaBancaria);
+
+            Console.ReadLine();
         }
     }
 }
