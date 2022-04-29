@@ -1,4 +1,4 @@
-﻿namespace Board
+﻿namespace enums
 {
     internal enum Color
     {

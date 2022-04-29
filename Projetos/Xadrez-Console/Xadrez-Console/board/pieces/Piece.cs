@@ -1,4 +1,7 @@
-﻿namespace Board
+﻿using enums;
+using board;
+
+namespace pieces
 {
     internal class Piece
     {
@@ -11,11 +14,11 @@
         {
         }
 
-        public Piece(Position position, Color color, Board board, int qtMovements = 0)
+        public Piece(Color color, Board board)
         {
-            Position = position;
+            Position = null;
             Color = color;
-            QtMovements = qtMovements;
+            QtMovements = 0;
             Board = board;
         }
     }

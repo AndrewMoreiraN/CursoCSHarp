@@ -1,10 +1,10 @@
-﻿using Board;
+﻿using board;
 
-namespace Xadrez_Console
+namespace chess
 {
     internal class Screen
     {
-        public static void ShowingBoardOnScreen(Board.Board board)
+        public static void ShowingBoardOnScreen(Board board)
         {
             for (int i = 0; i < board.Line; i++)
             {
@@ -16,7 +16,7 @@ namespace Xadrez_Console
                     }
                     else
                     {
-                        System.Console.WriteLine(board.Pieces[i, j] + " ");
+                        System.Console.Write(board.Pieces[i, j] + " ");
                     }
                 }
                 System.Console.WriteLine();
