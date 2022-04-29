@@ -1,12 +1,14 @@
 ﻿using System;
+using Board;
 
 namespace Xadrez_Console
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Position p = new Position(3, 4);
+            Console.WriteLine(p);
         }
     }
 }
