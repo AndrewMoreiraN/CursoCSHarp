@@ -7,8 +7,8 @@ namespace Xadrez_Console
     {
         private static void Main(string[] args)
         {
-            Position p = new Position(3, 4);
-            Console.WriteLine(p);
+            Board.Board board = new Board.Board(8, 8);
+            Screen.ShowingBoardOnScreen(board);
         }
     }
 }
