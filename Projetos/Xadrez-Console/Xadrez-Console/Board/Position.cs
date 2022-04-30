@@ -1,4 +1,6 @@
-﻿namespace board
+﻿using exceptions;
+
+namespace board
 {
     internal class Position
     {

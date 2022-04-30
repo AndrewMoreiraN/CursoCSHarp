@@ -2,7 +2,7 @@
 {
     internal enum Color
     {
-        Branca,
-        Preta
+        White,
+        Black
     }
 }
