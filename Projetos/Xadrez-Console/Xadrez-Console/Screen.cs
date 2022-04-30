@@ -1,5 +1,7 @@
 ﻿using board;
 using System;
+using pieces;
+using enums;
 
 namespace chess
 {
@@ -7,11 +9,10 @@ namespace chess
     {
         public static void ShowingBoardOnScreen(Board board)
         {
-            int number = board.Column;
             char letras = 'A';
             for (int i = 0; i < board.Line; i++)
             {
-                Console.Write(number-- + " ");
+                Console.Write(board.Line - i + " ");
                 for (int j = 0; j < board.Column; j++)
                 {
                     if (board.Pieces[i, j] == null)
@@ -20,7 +21,7 @@ namespace chess
                     }
                     else
                     {
-                        Console.Write(board.Pieces[i, j] + " ");
+                        ShowingPiece(board.Pieces[i, j]);
                     }
                 }
                 System.Console.WriteLine();
@@ -33,6 +34,21 @@ namespace chess
                     continue;
                 }
                 Console.Write(letras++ + " ");
+            }
+        }
+
+        public static void ShowingPiece(Piece piece)
+        {
+            if (piece.Color == Color.White)
+            {
+                Console.Write(piece + " ");
+            }
+            else
+            {
+                ConsoleColor aux = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(piece + " ");
+                Console.ForegroundColor = aux;
             }
         }
     }
