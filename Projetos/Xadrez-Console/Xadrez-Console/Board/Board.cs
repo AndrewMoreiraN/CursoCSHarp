@@ -62,6 +62,18 @@ namespace board
             p.Position = pos;
         }
 
+        public Piece RemovingPiece(Position pos)
+        {
+            if (Pieces[pos.Line, pos.Column] == null)
+            {
+                return null;
+            }
+            Piece aux = Pieces[pos.Line, pos.Column];
+            aux.Position = null;
+            Pieces[pos.Line, pos.Column] = null;
+            return aux;
+        }
+
         public void PositionAlreadyOccupied(Position pos)
         {
             ValidatePosition(pos);
