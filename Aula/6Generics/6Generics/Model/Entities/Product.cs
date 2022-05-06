@@ -23,12 +23,12 @@ namespace _6Generics.Model.Entities
 
         public int CompareTo(Object obj)
         {
-            if (!(obj is Product))
+            if (obj is Product)
             {
-                throw new ArgumentException("Comparing error: Argument is not a a Product.");
+                Product other = obj as Product;
+                return Price.CompareTo(other.Price);
             }
-            Product other = obj as Product;
-            return Price.CompareTo(other.Price);
+            throw new ArgumentException("Comparing error: Argument is not a a Product.");
         }
     }
 }
