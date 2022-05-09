@@ -44,33 +44,66 @@ namespace Linq
 
             IEnumerable<Product> r1 = products
                 .Where(x => x.Category.Tier == 1 && x.Price < 900);
+
             IEnumerable<string> r2 = products
                 .Where(x => x.Category.Name == "Tools")
                 .Select(x => x.Name);
+
             var r3 = products
                 .Where(x => x.Name[0] == 'c' || x.Name[0] == 'C')
                 .Select(x => new { x.Name, x.Price, CategoryName = x.Category.Name });
+
             IEnumerable<Product> r4 = products
                 .Where(x => x.Category.Tier == 1)
                 .OrderBy(x => x.Price)
                 .ThenBy(x => x.Name);
+
             var r5 = r4
                 .Skip(2)
                 .Take(4);
 
-            var r6 = products.FirstOrDefault();
-            var r7 = products.Where(x => x.Price > 3000.0).FirstOrDefault();
+            var r6 = products
+                .FirstOrDefault();
 
-            var r8 = products.Where(x => x.Id == 3).SingleOrDefault();
-            var r9 = products.Where(x => x.Id == 30).SingleOrDefault();
+            var r7 = products
+                .Where(x => x.Price > 3000.0)
+                .FirstOrDefault();
 
-            var r10 = products.Max(x => x.Price);
-            var r11 = products.Min(x => x.Price);
-            var r12 = products.Where(x => x.Category.Id == 1).Sum(x => x.Price);
-            var r13 = products.Where(x => x.Category.Id == 1).Average(x => x.Price);
-            var r14 = products.Where(x => x.Category.Id == 5).Select(x => x.Price).DefaultIfEmpty(0.0).Average();
-            var r15 = products.Where(x => x.Category.Id == 1).Select(x => x.Price).Aggregate(0.0, (x, y) => x + y);
-            var r16 = products.GroupBy(x => x.Category);
+            var r8 = products
+                .Where(x => x.Id == 3)
+                .SingleOrDefault();
+
+            var r9 = products
+                .Where(x => x.Id == 30)
+                .SingleOrDefault();
+
+            var r10 = products
+                .Max(x => x.Price);
+
+            var r11 = products
+                .Min(x => x.Price);
+
+            var r12 = products
+                .Where(x => x.Category.Id == 1)
+                .Sum(x => x.Price);
+
+            var r13 = products
+                .Where(x => x.Category.Id == 1)
+                .Average(x => x.Price);
+
+            var r14 = products
+                .Where(x => x.Category.Id == 5)
+                .Select(x => x.Price)
+                .DefaultIfEmpty(0.0)
+                .Average();
+
+            var r15 = products
+                .Where(x => x.Category.Id == 1)
+                .Select(x => x.Price)
+                .Aggregate(0.0, (x, y) => x + y);
+
+            var r16 = products
+                .GroupBy(x => x.Category);
 
             Print("Tier 1 And Price < 900", r1);
             Print("Names of products from tools", r2);
