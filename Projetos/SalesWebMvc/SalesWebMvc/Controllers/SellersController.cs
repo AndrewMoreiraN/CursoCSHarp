@@ -46,6 +46,19 @@ namespace SalesWebMvc.Controllers
             return NotFound();
         }
 
+        public IActionResult Details(int? id)
+        {
+            if (id != null)
+            {
+                var obj = _sellerService.FindById(id.Value);
+                if (obj != null)
+                {
+                    return View(obj);
+                }
+            }
+            return NotFound();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Seller seller)
